@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Тестовая форма для заполнения</title>
+	</head>
+	<body>
+		<h1>Отправка заявки на конференцию</h1>
+		<main>
+			<h2>Main data</h2>
+			<!-- <input id="Surname"><label for="Surname"> * Your Name and Surname</label> -->
+			<label for="Surname"><strong> * Please enter your name and Surname:</strong></label>
+			<br><br>
+			<input type="text" id="Surname" name="Surname" size="40" placeholder="Name Surname">
+			<br><br>
+			<label for="Birthday"><strong>Please enter your Birthday:</strong></label>
+			<br><br>
+			<input type="date" id="Birthday" name="Birthday">
+			<br><br>
+			<label><strong>Choose your gender:</strong></label>
+			<br><br>
+			<input id="radiobutton1" type="radio" name="Genders">&nbsp;<label for="radiobutton1">Male</label><br>
+			<input id="radiobutton2" type="radio" name="Genders">&nbsp;<label for="radiobutton2">Female</label><br>
+
+			<h2>Data for your personal cabinet</h2>
+
+			<label for="email"><strong> * Please enter your Gmail adress:</strong></label>
+			<br><br>
+			<input type="email" id="email" size="40" pattern=".+@gmail.com" placeholder="sophie@gmail.com" required="required">
+			<br><br>
+
+			<label for="pass"><strong> * Please enter your password:</strong></label>
+			<br><br>
+			<input type="password" id="pass" size="40" minlength="8" placeholder="8 characters minimum" required>
+			<br><br>
+
+			<label for="pass"><strong> * Please confirm your password:</strong></label>
+			<br><br>
+			<input type="password" id="pass" size="40" minlength="8" placeholder="confirm password" required>
+
+			<h2>Material for conference</h2>
+
+			<label for="topic"><strong> * Topic of your article:</strong></label>
+			<br><br>
+			<input type="text" id="topic" size="40" minlength="20" required>
+			<br><br>
+
+			<label for="thesis"><strong> * Thesis of your article:</strong></label>
+			<br><br>
+			<textarea placeholder="Your thesis" cols="30" rows="5"></textarea>
+			<br><br>
+
+			<label for="files"><strong> * Report file:</strong></label>
+			<br><br>
+			<input type="file" name="files" accept="image/png, image/jpeg">
+			<br><br>
+
+			<h2>Additional option</h2>
+
+
+			<div>
+				<label for="hotel">hotel</label>
+				<input type="checkbox" id="hotel" name="hotel"><br>
+			</div>
+
+			<label for="breakfast">breakfast</label>			
+			<input type="checkbox" id="breakfast" name="breakfast" checked="checked"><br>
+
+
+			<label for="lunch">lunch</label>
+			<input type="checkbox" id="lunch" name="lunch"><br>
+			
+			<label for="dinner">dinner</label>
+			<input type="checkbox" id="dinner" name="dinner"><br>
+			
+
+			<hr>
+			<button type="submit" name="submit_button">Submit</button>
+			<br>
+			<hr>
+			<small><p> All fields marked with (*) should be given.</p></small>
+
+
+
+
+
+			
+		</main>
+
+	</body>
+</html>
